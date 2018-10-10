@@ -4,9 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="name of css file">
     <title>Document</title>
 </head>
 <body>
-    THIS IS WHERE MY HTML WILL GO 
+<h1>Totally Trivia Trivia!</h1>
+
+<h3 class=Time>Time Remaining</h3>
+
+<div id="questions"></div>
+
+<div id="another"></div>
+
+
+
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+<script>
+
+//Pseudo Code: 
+// 1. array full of questions that displays to the html in a for loop
+
+var questions=[
+    {
+        q: "put a great question here",
+        a: "put the correct answer here", 
+        list: ['choices of answers to choose from, including the correct answer']
+    },
+
+    {
+        q: "put another 1 question here",
+        a: "put the correct answer here", 
+        list: ['choices of answers to choose from, including the correct answer']
+    },
+
+    {
+        q: "put another 2 question here",
+        a: "put the correct answer here", 
+        list: ['choices of answers to choose from, including the correct answer']
+    },
+
+    {
+        q: "put another 3 question here",
+        a: "put the correct answer here", 
+        list: ['choices of answers to choose from, including the correct answer']
+    },
+
+    {
+        q: "put 2another 4 question here",
+        a: "put the correct answer here", 
+        list: ['choices of answers to choose from, including the correct answer']
+    },
+
+    {
+        q: "put another 5 question here",
+        a: "put the correct answer here", 
+        list: ['choices of answers to choose from, including the correct answer']
+    },
+    {
+        q: "put another 6 question here",
+        a: "put the correct answer here", 
+        list: ['choices of answers to choose from, including the correct answer']
+    },
+]; 
+
+
+
+$("#questions").text(questions[0].q)
+$("#another").text(questions[1].q)
+$("#questions").text(questions[2].q)
+$("#questions").text(questions[3].q)
+$("#questions").text(questions[4].q)
+$("#questions").text(questions[5].q)
+$("#questions").text(questions[6].q)
+
+
+
+</script> 
 </body>
 </html>
