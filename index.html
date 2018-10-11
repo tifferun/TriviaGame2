@@ -12,13 +12,19 @@
 <h1>Marvel Movie Trivia!</h1>
  <h3 class=Time>Time Remaining</h3>
 
- <div id="red"></div>
+ <div>
+     <div id="red"></div>
+    <div id="redAnswers"></div>
+ </div>
+
  <div id="orange"></div>
  <div id="yellow"></div>
  <div id="green"></div>
  <div id="blue"></div>
  <div id="purple"></div>
  <div id="pink"></div>
+
+ 
 
  <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -32,39 +38,39 @@
  var questions=[
 
     {
-        q: "Captain America’s shield is made of:",
+        q: "1. Captain America’s shield is made of:",
         a: "vibranium", 
         list: ['vibranium', 'adamantium', 'kryptonite', 'chrome']
     },
      {
-        q: "What actor played Ant-Man?",
+        q: "2. What actor played Ant-Man?",
         a: "Paul Rudd", 
         list: ['Chris Hemsworth', 'Paul Rudd', 'Chris Pratt', 'Benedict Cumberbatch']
     },
      {
-        q: "What was Dr. Strange’s profession before he became Sorcerer Supreme?",
+        q: "3. What was Dr. Strange’s profession before he became Sorcerer Supreme?",
         a: "neurosurgeon", 
         list: ['professor', 'dermatologist', 'dentist', 'neurosurgeon']
 
     },
      {
-        q: "Who does Bruce Banner become?",
+        q: "4. Who does Bruce Banner become?",
         a: "Hulk", 
         list: ['Spiderman', 'Ironman', 'Ironman', 'Captain America']
         
     },
      {
-        q: "Who does Obadiah Stane attempt to assassinate?",
+        q: "5. Who does Obadiah Stane attempt to assassinate?",
         a: "Tony Stark", 
         list: ['Pepper Potts', 'James Rhodes', 'Howard Stark', 'Tony Stark']
     },
      {
-        q: "This daughter of Thanos is a member of the Guardians of the Galaxy:",
+        q: "6. This daughter of Thanos is a member of the Guardians of the Galaxy:",
         a: "Gamora", 
         list: ['Mantis', 'Gamora', 'Jemma Simmons', 'Scarlett Witch']
     },
     {
-        q: "In “Captain America: Civil War”, who rules Wakanda?",
+        q: "7. In “Captain America: Civil War”, who rules Wakanda?",
         a: 'Black Panther', 
         list: ['HYDRA', 'Steve Rodgers', 'Winter Soldier', 'Black Panther']
     },
@@ -77,6 +83,18 @@ $("#blule").text(questions[3].q)
 $("#green").text(questions[4].q)
 $("#purple").text(questions[5].q)
 $("#pink").text(questions[6].q)
+
+$("#redAnswers").text("heyyyy")
+
+
+// <h1>JavaScript is ______ Language.</h1><br>
+// <form >
+// <input type="radio" name="choice" value="Scripting"> Scripting
+// <input type="radio" name="choice" value="Programming"> Programming
+// <input type="radio" name="choice" value="Application"> Application
+// <input type="radio" name="choice" value="None of These"> None of These
+// </form>
+// <button>Submit Answer</button> 
 
 </script> 
 </body>
